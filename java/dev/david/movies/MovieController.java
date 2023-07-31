@@ -22,7 +22,7 @@ public class MovieController {
         return new ResponseEntity<List<Movie>>(movieService.AllMovies(), HttpStatus.OK);
     }
 
-    @GetMapping("/{imdbId}")
+    @GetMapping("/{imdbId}") //sorting movies by imdbId
     public ResponseEntity<Optional<Movie>> getSingleMovie(@PathVariable String imdbId) {
         return new ResponseEntity<Optional<Movie>>(movieService.singleMovie(imdbId), HttpStatus.OK);
     }

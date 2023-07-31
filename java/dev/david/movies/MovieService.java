@@ -19,3 +19,4 @@ public class MovieService {
         return movieRepository.findMovieByImdbId(imdbId);
     }
 }
+    //get movies by imdbId
